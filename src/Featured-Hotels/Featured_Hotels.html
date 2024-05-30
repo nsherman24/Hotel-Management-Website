@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Hotels</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-content">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Your Logo" >
+            </a>
+            <ul class="nav-links">
+                <li><a href="/src/Main-Page/MainPage.html">Home</a></li>
+                <li><a href="/src/Featured-Hotels/Featured_Hotels.html">Featured Hotels</a></li>
+                <li><a href="/src/Contact-Page/contact.html">Contact Us</a></li>
+
+                <li>
+                    <div id="search-container">
+                        <div id="dropdown-container" class="dropdown">
+                            <button onclick="toggleDropdown('filter-dropdown')" class="dropbtn">
+                                Filters
+                            </button>
+                            <div id="filter-dropdown" class="dropdown-content">
+                                <!-- Filter options -->
+                                <input type="checkbox" id="wifi" name="amenities" value="Free WiFi" >
+                                Free WiFi<br >
+                                <input type="checkbox" id="parking" name="amenities" value="Free parking" >
+                                Free Parking<br >
+                                <input type="checkbox" id="pool" name="amenities" value="Pool" >
+                                Pool<br >
+                                <input type="checkbox" id="gym" name="amenities" value="Gym" >
+                                Gym<br >
+                            </div>
+                        </div>
+                        <input type="text" id="search-box" placeholder="Search Hotels" >
+                        <button id="search-btn" onclick="searchHotels()">Search</button>
+                    </div>
+                    <div id="results-container"></div>
+                </li>
+
+                <li><a href="/src/FAQ-Page/FAQ.html">FAQ</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+  <h2>Featured Hotels</h2>
+  <div class="hotel-grid">
+    <div class="hotel-card">
+      <img src="hotel-1.jpg" alt="Hotel 1">
+      <h3>Emirates Palace Mandarin Oriental</h3>
+      <p>Location: Abu Dhabi, United Arab Emirates</p>
+      <p>Description: Indulge in opulence and unparalleled hospitality at the Emirates Palace, 
+      a true landmark of Abu Dhabi, where every detail reflects Arabian grandeur
+       and elegance. Alternatively, immerse yourself in the exquisite blend of oriental
+       charm and contemporary luxury at the Mandarin Oriental, offering an enchanting retreat
+       in the heart of the city.</p>
+      <button>Book Now</button>
+    </div>
+    <div class="hotel-card">
+      <img src="hotel-2.jpeg" alt="Hotel 2">
+      <h3>THE US GRANT</h3>
+      <p>Location: San Diego, United States</p>
+      <p>Description:  a luxury hotel steeped in rich history and cultural significance, The US GRANT
+       offers unparalleled hospitality and sophistication. Immerse yourself in the grandeur of its iconic
+       architecture and lavish interiors, while indulging in exquisite dining experiences and world-class
+       amenities. Discover the perfect blend of tradition and modernity</p>
+      <button>Book Now</button>
+    </div>
+    <div class="hotel-card">
+      <img src="hotel-3.jpeg" alt="Hotel 3">
+      <h3>ARIA Resort & Casino</h3>
+      <p>Location: Las Vegas, United States</p>
+      <p> The epitome of luxury and excitement.nestled in the heart of the iconic Las Vegas Strip. Experience
+       a fusion of modern sophistication and exhilarating entertainment in this architectural masterpiece. With
+       its stunning design, world-class amenities, and unparalleled service, ARIA offers an unforgettable escape
+       in the entertainment capital of the world. Indulge in exquisite dining, unwind in luxurious accommodations,
+       and immerse yourself in the vibrant energy of Las Vegas
+        </p>
+      <button>Book Now</button>
+    </div>
+    <div class="hotel-card">
+      <img src="hotel-4.jpg" alt="Hotel 4">
+      <h3>Hotel Name 4</h3>
+      <p>Location: Signapore</p>
+      <p>Description: modern luxury meets unparalleled hospitality in the heart of Singapore's vibrant city center.
+       Discover a haven of sophistication and comfort, offering breathtaking views of the city skyline and Marina Bay.
+       Immerse yourself in the elegance of our meticulously designed rooms and suites, indulge in world-class dining 
+      experiences, and rejuvenate your senses at our state-of-the-art wellness facilities. Whether you're here for
+       business or leisure, the Peninsula Excelsior Singapore promises an unforgettable stay,</p>
+      <button>Book Now</button>
+    </div>
+    <div class="hotel-card">
+      <img src="hotel-5.jpg" alt="Hotel 5">
+      <h3>Mandarin Oriental Hyde Park</h3>
+      <p>Location: London, United Kingdom</p>
+      <p>Description: Experience timeless elegance and unmatched luxury at the Mandarin Oriental Hyde Park, London. 
+      Situated in the heart of Knightsbridge, this iconic hotel offers a perfect blend of historic charm and contemporary 
+      sophistication. Indulge in exquisite dining experiences, unwind in beautifully appointed rooms and suites, and enjoy
+       impeccable service in a truly refined setting. Whether you're exploring the city's vibrant attractions or seeking a 
+      tranquil retreat, the Mandarin Oriental Hyde Park promises an unforgettable stay in the heart of London.</p>
+      <button>Book Now</button>
+    </div>
+    <div class="hotel-card">
+      <img src="hotel-6.jpg" alt="Hotel 6">
+      <h3>Hotel Fasano Angra dos Reis</h3>
+      <p>Location: Angra dos Reis, Brazil</p>
+      <p>Description: Hotel Fasano offers an unparalleled luxury experience. Surrounded by lush tropical forests and crystal-clear
+       waters, this exclusive retreat combines contemporary sophistication with the natural beauty of its surroundings. Indulge in
+       world-class amenities, exquisite dining options, and personalized service while immersing yourself in the serene ambiance of
+       this coastal paradise. Whether you're seeking relaxation or adventure, Hotel Fasano Angra dos Reis invites you to discover the
+       ultimate in luxury and tranquility on the Brazilian coast.</p>
+      <button>Book Now</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="section-container footer-container">
+      <div class="footer-col">
+          <h3>SuiteSpot</h3>
+          <p>
+              SuiteSpot is a hotel booking website that makes it easier for anyone
+              to find and book a hotel
+          </p>
+          <p>
+              SuiteSpot aims to have a user-friendly interface that makes it
+              easier and less stressful for the user.
+          </p>
+      </div>
+      <div class="footer-col">
+          <h4>Company</h4>
+          <a href="/src/About-Us/about_us.html" class="footer-link">About Us</a>
+          <a href="/src/Contact-Page/contact.html" class="footer-link">Contact Us</a>
+          <a href="/src/Booking-Form/Booking_Form.html" class="footer-link">Book</a>
+      </div>
+      <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="/src/FAQ-Page/FAQ.html" class="footer-link">FAQs</a>
+          <a href="/src/Terms-of-Service-Page/Terms.html" class="footer-link">Terms & Conditions</a>
+          <a href="/src/Privacy-Policy/privacy.html" class="footer-link">Privacy Policy</a>
+      </div>
+      <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="https://www.twitter.com" class="footer-link">Social Media</a>
+          <a href="" class="footer-link">Help Center</a>
+          <a href="" class="footer-link">Partnerships</a>
+      </div>
+  </div>
+  <div class="footer-bar">
+      Copyright © 2024 Web Design Mastery. All rights reserved.
+  </div>
+</footer>
+<script src="searchBarApp.js"></script>
+</body>
+
+</html>

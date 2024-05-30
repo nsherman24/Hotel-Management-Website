@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suitespot - About Us</title>
+<link rel="stylesheet" href="styles.css"> 
+<script src="validation.js" defer></script> 
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-content">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Your Logo" >
+            </a>
+            <ul class="nav-links">
+                <li><a href="/src/Main-Page/MainPage.html">Home</a></li>
+                <li><a href="/src/Featured-Hotels/Featured_Hotels.html">Featured Hotels</a></li>
+                <li><a href="/src/Contact-Page/contact.html">Contact Us</a></li>
+
+                <li>
+                    <div id="search-container">
+                        <div id="dropdown-container" class="dropdown">
+                            <button onclick="toggleDropdown('filter-dropdown')" class="dropbtn">
+                                Filters
+                            </button>
+                            <div id="filter-dropdown" class="dropdown-content">
+                                <!-- Filter options -->
+                                <input type="checkbox" id="wifi" name="amenities" value="Free WiFi" >
+                                Free WiFi<br >
+                                <input type="checkbox" id="parking" name="amenities" value="Free parking" >
+                                Free Parking<br >
+                                <input type="checkbox" id="pool" name="amenities" value="Pool" >
+                                Pool<br >
+                                <input type="checkbox" id="gym" name="amenities" value="Gym" >
+                                Gym<br >
+                            </div>
+                        </div>
+                        <input type="text" id="search-box" placeholder="Search Hotels" >
+                        <button id="search-btn" onclick="searchHotels()">Search</button>
+                    </div>
+                    <div id="results-container"></div>
+                </li>
+
+                <li><a href="/src/FAQ-Page/FAQ.html">FAQ</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Main content of the page -->
+  <div class="container">
+    <!-- Your content for the other page goes here -->
+    <h1>About Us</h1>
+    <p>Welcome to Suitespot, our hotel booking website! We are a group of students from ISTA 329, working on our final website project.</p>
+    <p>Our mission is to provide a user-friendly platform where users can easily find and book hotels for their travel needs. Whether you're planning a vacation, business trip, or a weekend getaway, we've got you covered!</p>
+    <p>With our extensive database of hotels and easy booking process, we aim to make your hotel booking experience smooth and easy.</p>
+    <p>Thank you for visiting our website and trusting us with your accommodation needs. We're committed to continuously improving our services to serve you better.</p>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-container footer-container">
+        <div class="footer-col">
+            <h3>SuiteSpot</h3>
+            <p>
+                SuiteSpot is a hotel booking website that makes it easier for anyone
+                to find and book a hotel
+            </p>
+            <p>
+                SuiteSpot aims to have a user-friendly interface that makes it
+                easier and less stressful for the user.
+            </p>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+            <a href="/src/About-Us/about_us.html" class="footer-link">About Us</a>
+            <a href="/src/Contact-Page/contact.html" class="footer-link">Contact Us</a>
+            <a href="/src/Booking-Form/Booking_Form.html" class="footer-link">Book</a>
+        </div>
+        <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="/src/FAQ-Page/FAQ.html" class="footer-link">FAQs</a>
+            <a href="/src/Terms-of-Service-Page/Terms.html" class="footer-link">Terms & Conditions</a>
+            <a href="/src/Privacy-Policy/privacy.html" class="footer-link">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+            <h4>Resources</h4>
+            <a href="https://www.twitter.com" class="footer-link">Social Media</a>
+            <a href="" class="footer-link">Help Center</a>
+            <a href="" class="footer-link">Partnerships</a>
+        </div>
+    </div>
+    <div class="footer-bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+    </div>
+  </footer>
+  <script src="searchBarApp.js"></script>
+</body>
+</html>

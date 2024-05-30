@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Search</title>
+    <link rel="stylesheet" href="searchBarStyles.css">
+
+</head>
+
+<body>
+    <div id="search-container">
+        <div id="dropdown-container" class="dropdown">
+            <button onclick="toggleDropdown('filter-dropdown')" class="dropbtn">
+                Filters
+            </button>
+            <div id="filter-dropdown" class="dropdown-content">
+                <!-- Filter options -->
+                <input type="checkbox" id="wifi" name="amenities" value="Free WiFi">Free WiFi
+                <input type="checkbox" id="parking" name="amenities" value="Free parking">Free Parking
+                <input type="checkbox" id="pool" name="amenities" value="Pool">Pool
+                <input type="checkbox" id="gym" name="amenities" value="Gym">Gym
+            </div>
+        </div>
+        <input type="text" id="search-box" placeholder="Search Hotels">
+        <button id="search-btn" onclick="searchHotels()">Search</button>
+    </div>
+    <div id="results-container"></div>
+
+    <script src="searchBarApp.js"></script>
+</body>
+
+</html>

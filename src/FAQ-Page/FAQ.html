@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SuiteSpot | FAQ</title>
+        <meta charset="UTF-8">
+        <meta name="description"
+            content="Frequently asked questions regarding Suitespot including general, pricing, billing, and support.">
+        <link rel="stylesheet" href="faqStyles.css">
+        <script src="validation.js" defer></script> <!-- Include the validation script -->
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-content">
+                    <a href="#" class="logo">
+                        <img src="logo.png" alt="Your Logo" >
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="/src/Main-Page/MainPage.html">Home</a></li>
+                        <li><a href="/src/Featured-Hotels/Featured_Hotels.html">Featured Hotels</a></li>
+                        <li><a href="/src/Contact-Page/contact.html">Contact Us</a></li>
+    
+                        <li>
+                            <div id="search-container">
+                                <div id="dropdown-container" class="dropdown">
+                                    <button onclick="toggleDropdown('filter-dropdown')" class="dropbtn">
+                                        Filters
+                                    </button>
+                                    <div id="filter-dropdown" class="dropdown-content">
+                                        <!-- Filter options -->
+                                        <input type="checkbox" id="wifi" name="amenities" value="Free WiFi" >
+                                        Free WiFi<br >
+                                        <input type="checkbox" id="parking" name="amenities" value="Free parking" >
+                                        Free Parking<br >
+                                        <input type="checkbox" id="pool" name="amenities" value="Pool" >
+                                        Pool<br >
+                                        <input type="checkbox" id="gym" name="amenities" value="Gym" >
+                                        Gym<br >
+                                    </div>
+                                </div>
+                                <input type="text" id="search-box" placeholder="Search Hotels" >
+                                <button id="search-btn" onclick="searchHotels()">Search</button>
+                            </div>
+                            <div id="results-container"></div>
+                        </li>
+    
+                        <li><a href="/src/FAQ-Page/FAQ.html">FAQ</a></li>
+                        <!-- Add more navigation links as needed -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <main class="faq-content-container">
+            <section class="faq-content">
+                <h1 class="faq-header">Frequently Asked Questions</h1>
+            </section>
+            <section class="faq-content">
+                <h2 class="faq-qa-header">General Questions</h2>
+                <details class="faq-details">
+                    <summary class="faq-summary">
+                        <h3>
+                            How can I search for hotels on your website?
+                        </h3>
+                    </summary>
+                    <p>
+                        You can find a search bar at the top of our website with
+                        different search filters you can choose from.
+                    </p>
+                </details>
+                <details class="faq-details">
+                    <summary class="faq-summary">
+                        <h3>
+                            What information is provided for each hotel listing?
+                        </h3>
+                    </summary>
+                    <p>
+                        SuiteSpot provides the price, location, and a short
+                        description for each hotel listing.
+                    </p>
+                </details>
+                <details class="faq-details">
+                    <summary class="faq-summary">
+                        <h3>
+                            Can I book a room directly through your website?
+                        </h3>
+                    </summary>
+                    <p>
+                        With SuiteSpot, you are able to book a room directly
+                        through our website.
+                    </p>
+                </details>
+                <details class="faq-details">
+                    <summary class="faq-summary">
+                        <h3>
+                            Can I book additional services or amenities through your website?
+                        </h3>
+                    </summary>
+                    <p>
+                        Unfortunately, at the moment SuiteSpot does not provide additional
+                        services or amenities.
+                    </p>
+                </details>
+            </section>
+            <section class="faq-content">
+                <h2 class="faq-qa-header">Pricing, Billing, & Support</h2>
+                <details class="faq-details">
+                    <summary class="faq-summary">
+                        <h3>
+                            What payment methods are accepted?
+                        </h3>
+                    </summary>
+                    <p>
+                        At SuiteSpot, we accept payments from all major
+                        credit card providers, including Visa, Mastercard,
+                        American Express, and Discover.
+                    </p>
+                </details>
+                <details class="faq-details">
+                    <summary class="faq-summary">
+                        <h3>
+                            What is your cancellation and refund policy?
+                        </h3>
+                    </summary>
+                    <p>
+                        Our standard cancellation policy allows for free
+                        cancellations up to 48 hours before the scheduled
+                        check-in time. Cancellations made within 48 hours
+                        of check-in will result in a charge equal to one
+                        night's stay. <br><br>
+                        For refunds, any fees paid at the time of booking
+                        (excluding taxes and service charges) will be
+                        refunded in full for cancellations made at least
+                        48 hours prior to check-in.
+                    </p>
+                </details>
+                <details class="faq-details">
+                    <summary class="faq-summary">
+                        <h3>
+                            How can I contact customer support if I have a question or issue?
+                        </h3>
+                    </summary>
+                    <p>
+                        To contact customer support, you can go to our "Contact Us" page
+                        and fill out a short form with your question or issue.
+                    </p>
+                </details>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="section-container footer-container">
+                <div class="footer-col">
+                    <h3>SuiteSpot</h3>
+                    <p>
+                        SuiteSpot is a hotel booking website that makes it easier for anyone
+                        to find and book a hotel
+                    </p>
+                    <p>
+                        SuiteSpot aims to have a user-friendly interface that makes it
+                        easier and less stressful for the user.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="/src/About-Us/about_us.html" class="footer-link">About Us</a>
+                    <a href="/src/Contact-Page/contact.html" class="footer-link">Contact Us</a>
+                    <a href="/src/Booking-Form/Booking_Form.html" class="footer-link">Book</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="/src/FAQ-Page/FAQ.html" class="footer-link">FAQs</a>
+                    <a href="/src/Terms-of-Service-Page/Terms.html" class="footer-link">Terms & Conditions</a>
+                    <a href="/src/Privacy-Policy/privacy.html" class="footer-link">Privacy Policy</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <a href="https://www.twitter.com" class="footer-link">Social Media</a>
+                    <a href="" class="footer-link">Help Center</a>
+                    <a href="" class="footer-link">Partnerships</a>
+                </div>
+            </div>
+            <div class="footer-bar">
+                Copyright © 2024 Web Design Mastery. All rights reserved.
+            </div>
+        </footer>
+<script src="searchBarApp.js"></script>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="validation.js" defer></script> <!-- Include the validation script -->
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-content">
+        <a href="#" class="logo">
+          <img src="./Pictures/logo.png" alt="Your Logo" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Featured Hotels</a></li>
+          <li><a href="#">Contact Us</a></li>
+
+          <li>
+            <div id="search-container">
+              <div id="dropdown-container" class="dropdown">
+                <button onclick="toggleDropdown('filter-dropdown')" class="dropbtn">
+                  Filters
+                </button>
+                <div id="filter-dropdown" class="dropdown-content">
+                  <!-- Filter options -->
+                  <input type="checkbox" id="wifi" name="amenities" value="Free WiFi" />
+                  Free WiFi<br />
+                  <input type="checkbox" id="parking" name="amenities" value="Free parking" />
+                  Free Parking<br />
+                  <input type="checkbox" id="pool" name="amenities" value="Pool" />
+                  Pool<br />
+                  <input type="checkbox" id="gym" name="amenities" value="Gym" />
+                  Gym<br />
+                </div>
+              </div>
+              <input type="text" id="search-box" placeholder="Search Hotels" />
+              <button id="search-btn" onclick="searchHotels()">Search</button>
+            </div>
+            <div id="results-container"></div>
+          </li>
+
+          <li><a href="#">FAQ</a></li>
+          <!-- Add more navigation links as needed -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2>Hotel Booking Form</h2>
+    <form id="booking-form" action="submit.php" method="POST" onsubmit="return validateForm()">
+
+      <!-- Dates Section -->
+      <div class="form-group">
+        <label for="check-in-date">Check-in Date:</label>
+        <input type="date" id="check-in-date" name="check-in-date" required>
+      </div>
+      <div class="form-group">
+        <label for="check-out-date">Check-out Date:</label>
+        <input type="date" id="check-out-date" name="check-out-date" required>
+      </div>
+
+      <!-- Guest Information Section -->
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <!-- Number of Guests Section -->
+      <div class="form-group">
+        <label for="adults">Adults:</label>
+        <input type="number" id="adults" name="adults" min="1" required>
+      </div>
+      <div class="form-group">
+        <label for="children">Children:</label>
+        <input type="number" id="children" name="children" min="0" required>
+      </div>
+
+      <!-- Special Requests Section -->
+      <div class="form-group">
+        <label for="special-requests">Special Requests:</label>
+        <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+
+    </form>
+  </div>
+  <script src="searchBarApp.js"></script>
+</body>
+
+</html>

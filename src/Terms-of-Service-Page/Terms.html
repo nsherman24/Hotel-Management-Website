@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Terms of Service</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="termsStyles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-content">
+                <a href="#" class="logo">
+                    <img src="logo.png" alt="Your Logo" >
+                </a>
+                <ul class="nav-links">
+                    <li><a href="/src/Main-Page/MainPage.html">Home</a></li>
+                    <li><a href="/src/Featured-Hotels/Featured_Hotels.html">Featured Hotels</a></li>
+                    <li><a href="/src/Contact-Page/contact.html">Contact Us</a></li>
+
+                    <li>
+                        <div id="search-container">
+                            <div id="dropdown-container" class="dropdown">
+                                <button onclick="toggleDropdown('filter-dropdown')" class="dropbtn">
+                                    Filters
+                                </button>
+                                <div id="filter-dropdown" class="dropdown-content">
+                                    <!-- Filter options -->
+                                    <input type="checkbox" id="wifi" name="amenities" value="Free WiFi" >
+                                    Free WiFi<br >
+                                    <input type="checkbox" id="parking" name="amenities" value="Free parking" >
+                                    Free Parking<br >
+                                    <input type="checkbox" id="pool" name="amenities" value="Pool" >
+                                    Pool<br >
+                                    <input type="checkbox" id="gym" name="amenities" value="Gym" >
+                                    Gym<br >
+                                </div>
+                            </div>
+                            <input type="text" id="search-box" placeholder="Search Hotels" >
+                            <button id="search-btn" onclick="searchHotels()">Search</button>
+                        </div>
+                        <div id="results-container"></div>
+                    </li>
+
+                    <li><a href="/src/FAQ-Page/FAQ.html">FAQ</a></li>
+                    <!-- Add more navigation links as needed -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main>
+        <section>
+            <div class="section-container">
+                <h1>Terms of Service</h1>
+                <p>Welcome to SuiteSpot! Below are the terms and conditions that govern your use of our services.</p>
+
+                <h2>1. Booking and Reservation</h2>
+                <p>By booking and making reservations through our website, you agree to the following:</p>
+                <ul>
+                    <li>You must provide accurate and complete information when making a reservation.</li>
+                    <li>Your reservation is subject to availability and confirmation by the hotel.</li>
+                    <li>Cancellation policies and fees vary depending on the hotel and room type. Please review the
+                        specific cancellation policy before making a reservation.</li>
+                    <li>Any special requests, such as room preferences or additional services, are not guaranteed and
+                        are subject to availability.</li>
+                </ul>
+
+                <h2>2. Payment</h2>
+                <p>Payment for hotel reservations made through our website is processed securely. By making a
+                    reservation, you agree to the following payment terms:</p>
+                <ul>
+                    <li>You will be charged the full amount of your reservation at the time of booking, unless otherwise
+                        specified.</li>
+                    <li>Additional charges, such as taxes, fees, and incidental expenses, may apply and will be clearly
+                        stated during the booking process.</li>
+                    <li>We accept major credit cards and other forms of payment as indicated on our website.</li>
+                </ul>
+
+                <h2>3. Cancellation Policy</h2>
+                <p>We understand that plans may change, and you may need to cancel your reservation. Please review the
+                    cancellation policy carefully before making a reservation:</p>
+                <ul>
+                    <li>Cancellation policies vary depending on the hotel and room type. You may be eligible for a full
+                        or partial refund if you cancel within the specified time frame.</li>
+                    <li>Some reservations may be non-refundable or subject to a cancellation fee. These terms will be
+                        clearly stated during the booking process.</li>
+                    <li>To cancel or modify your reservation, please contact our customer service team or manage your
+                        booking online through our website.</li>
+                </ul>
+
+                <h2>4. User Responsibilities</h2>
+                <p>As a user of our website, you agree to the following responsibilities:</p>
+                <ul>
+                    <li>Provide accurate and complete information when using our services.</li>
+                    <li>Comply with the terms of service and any applicable laws and regulations.</li>
+                    <li>Respect the rights of other users and refrain from engaging in any illegal or abusive behavior.
+                    </li>
+                </ul>
+
+                <h2>5. Intellectual Property Rights</h2>
+                <p>All content on our website, including logos, trademarks, text, images, and software, is the property
+                    of SuiteSpot or its licensors and is protected by intellectual property laws.</p>
+                <p>Users are not permitted to reproduce, distribute, or modify any content on our website without prior
+                    written consent from SuiteSpot.</p>
+
+                <h2>6. Privacy Policy</h2>
+                <p>Our privacy policy outlines how we collect, use, and protect personal data submitted by users. Please
+                    review our privacy policy for more information.</p>
+
+                <h2>7. Prohibited Activities</h2>
+                <p>The following activities are prohibited on our website:</p>
+                <ul>
+                    <li>Spamming or sending unsolicited messages.</li>
+                    <li>Hacking, phishing, or attempting to gain unauthorized access to accounts or systems.</li>
+                    <li>Posting or transmitting any unlawful, abusive, or offensive content.</li>
+                </ul>
+
+                <h2>8. Limitation of Liability</h2>
+                <p>We do our best to provide accurate and reliable information on our website, but we cannot guarantee
+                    the accuracy or completeness of all content. By using our website, you agree that:</p>
+                <ul>
+                    <li>We are not liable for any damages or losses resulting from the use of our website or reliance on
+                        any information provided.</li>
+                    <li>We are not responsible for any errors, omissions, or interruptions in the operation of our
+                        website.</li>
+                    <li>Our liability is limited to the extent permitted by law.</li>
+                </ul>
+
+                <h2>9. Indemnification</h2>
+                <p>You agree to indemnify and hold SuiteSpot harmless from any claims, damages, or losses arising from
+                    your use of our website or violation of the terms of service.</p>
+
+                <h2>10. Changes to Terms of Service</h2>
+                <p>We reserve the right to modify or update these terms of service at any time. Any changes will be
+                    effective immediately upon posting on our website. It is your responsibility to review the terms of
+                    service periodically for changes. By continuing to use our website after any modifications, you
+                    agree to the updated terms.</p>
+
+                <h2>11. Governing Law and Dispute Resolution</h2>
+                <p>These terms of service are governed by the laws of the United States. Any disputes arising from or
+                    relating to these terms shall be resolved through arbitration in accordance with the rules of
+                    American Arbitration Association (AAA), JAMS (formerly known as Judicial Arbitration and Mediation Services), 
+                    or the International Chamber of Commerce (ICC)., with the arbitration proceedings held in the United States.</p>
+
+                <!-- Add more sections as needed -->
+                
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="section-container footer-container">
+            <div class="footer-col">
+                <h3>SuiteSpot</h3>
+                <p>
+                    SuiteSpot is a hotel booking website that makes it easier for anyone
+                    to find and book a hotel
+                </p>
+                <p>
+                    SuiteSpot aims to have a user-friendly interface that makes it
+                    easier and less stressful for the user.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="/src/About-Us/about_us.html" class="footer-link">About Us</a>
+                <a href="/src/Contact-Page/contact.html" class="footer-link">Contact Us</a>
+                <a href="/src/Booking-Form/Booking_Form.html" class="footer-link">Book</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="/src/FAQ-Page/FAQ.html" class="footer-link">FAQs</a>
+                <a href="/src/Terms-of-Service-Page/Terms.html" class="footer-link">Terms & Conditions</a>
+                <a href="/src/Privacy-Policy/privacy.html" class="footer-link">Privacy Policy</a>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <a href="https://www.twitter.com" class="footer-link">Social Media</a>
+                <a href="" class="footer-link">Help Center</a>
+                <a href="" class="footer-link">Partnerships</a>
+            </div>
+        </div>
+        <div class="footer-bar">
+            Copyright © 2024 Web Design Mastery. All rights reserved.
+        </div>
+    </footer>
+    <script src="searchBarApp.js"></script>
+</body>
+
+</html>

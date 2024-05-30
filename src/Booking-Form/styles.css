@@ -1,0 +1,210 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: 20px; /* Adjust the distance from the top */
+  left: 0px;
+  transition: opacity 0.6s ease;
+  opacity: 0;
+}
+
+.logo img {
+  width: 24%;
+  height: auto;
+}
+
+.navbar:hover .logo {
+  opacity: 1; /* Set the height to 0 to hide the logo on hover */
+}
+
+.navbar {
+  /* position: fixed; Position the navbar fixed at the top of the viewport */
+  /* top: 0; Align the navbar to the top of the viewport */
+  /* width: 100%;  */
+  /* z-index: 1000; */
+  top: 0;
+  left: 0;
+
+  background-color: #0973a8;
+  color: #fff;
+  padding: 10px 20px; /* Add padding to the navigation bar */
+
+  transition: height 0.6s ease; /* Add smooth transition for height changes */
+  height: 50px; /* Set initial height */
+  overflow: visible;
+}
+
+.navbar:hover {
+  height: 198px;
+}
+
+.navbar-container {
+  /* display: flex; */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+  align-items: flex-end;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  position: relative;
+  bottom: 0;
+  justify-content: center;
+  align-items: flex-end;
+  transition: bottom 0.6s ease; /* Smooth transition for position change */
+}
+
+.navbar:hover .nav-links {
+  bottom: -150px; /* Adjusted position when navbar is hovered over */
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* for this page */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: margin 0.6s ease, padding 0.6s ease;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the container that holds the search area */
+#search-container {
+  text-align: center;
+  position: relative;
+  padding: 10px 0;
+}
+
+/* Styles for the dropdown container, search input, and search button */
+#dropdown-container,
+#search-box,
+#search-btn {
+  float: left;
+  margin: 0;
+}
+
+/* Styles for the 'Filters' dropdown button */
+.dropbtn {
+  background-color: lightgrey;
+  color: black;
+  padding: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  height: 24px;
+  border-radius: 3px 0px 0px 3px;
+  margin-right: -1px;
+}
+
+/* Styles for the search input field */
+#search-box {
+  width: 300px;
+  height: 12px;
+  border: 1px solid #ccc;
+  border-radius: 0px 0px 0px 0px;
+  padding: 5px;
+  margin: 0;
+}
+
+/* Styles for the 'Search' button */
+#search-btn {
+  background-color: orange;
+  height: 24px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 0px 3px 3px 0px;
+  cursor: pointer;
+}
+
+/* Styles for the content that shows up when you click the 'Filters' button */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: black;
+  background-color: white;
+  font-size: 12px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  padding-left: 0;
+  text-align: left;
+}
+
+/* Styles for the container that will display search results */
+#results-container {
+    display: none;
+    position: absolute; 
+    width: 400px;
+    top: 100%; 
+    background-color: white; 
+    border: 1px solid #ccc; 
+    z-index: 1;
+    color:black;
+}

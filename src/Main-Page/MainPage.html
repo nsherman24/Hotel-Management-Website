@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SuiteSpot</title>
+    <link href="homepagestyles.css" rel="stylesheet" type="text/css" >
+    <meta charset="utf-8" >
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-content">
+                <a href="#" class="logo">
+                    <img src="./Pictures/logo.png" alt="Your Logo" >
+                </a>
+                <ul class="nav-links">
+                    <li><a href="/src/Main-Page/MainPage.html">Home</a></li>
+                    <li><a href="/src/Featured-Hotels/Featured_Hotels.html">Featured Hotels</a></li>
+                    <li><a href="/src/Contact-Page/contact.html">Contact Us</a></li>
+
+                    <li>
+                        <div id="search-container">
+                            <div id="dropdown-container" class="dropdown">
+                                <button onclick="toggleDropdown('filter-dropdown')" class="dropbtn">
+                                    Filters
+                                </button>
+                                <div id="filter-dropdown" class="dropdown-content">
+                                    <!-- Filter options -->
+                                    <input type="checkbox" id="wifi" name="amenities" value="Free WiFi" >
+                                    Free WiFi<br >
+                                    <input type="checkbox" id="parking" name="amenities" value="Free parking" >
+                                    Free Parking<br >
+                                    <input type="checkbox" id="pool" name="amenities" value="Pool" >
+                                    Pool<br >
+                                    <input type="checkbox" id="gym" name="amenities" value="Gym" >
+                                    Gym<br >
+                                </div>
+                            </div>
+                            <input type="text" id="search-box" placeholder="Search Hotels" >
+                            <button id="search-btn" onclick="searchHotels()">Search</button>
+                        </div>
+                        <div id="results-container"></div>
+                    </li>
+
+                    <li><a href="/src/FAQ-Page/FAQ.html">FAQ</a></li>
+                    <!-- Add more navigation links as needed -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="featured-hotels">
+        <h1 class="featured-hotels-header">Featured Hotels</h1>
+        <div class="featured-hotels-grid">
+            <div class="featured-card">
+                <img src="./Pictures/hotel-1.jpg" alt="first featured hotel" >
+                <div class="featured-content">
+                    <div class="featured-card-header">
+                        <h4>The Plaza Hotel</h4>
+                        <h4>$499</h4>
+                    </div>
+                    <p>New York City, USA</p>
+                </div>
+            </div>
+            <div class="featured-card">
+                <img src="./Pictures/hotel-2.jpeg" alt="second featured hotel" >
+                <div class="featured-content">
+                    <div class="featured-card-header">
+                        <h4>The US Grant</h4>
+                        <h4>$543</h4>
+                    </div>
+                    <p>San Diego, USA</p>
+                </div>
+            </div>
+            <div class="featured-card">
+                <img src="./Pictures/hotel-3.jpeg" alt="third featured hotel" >
+                <div class="featured-content">
+                    <div class="featured-card-header">
+                        <h4>ARIA Casino & Resort</h4>
+                        <h4>$210</h4>
+                    </div>
+                    <p>Las Vegas, USA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="client">
+        <div class="section-container client-container">
+            <h2 class="section-header">What our clients say</h2>
+            <div class="client-grid">
+                <div class="client-card">
+                    <!-- <img src="./Pictures/client-1.jpg" alt="client"> -->
+                    <p>
+                        This website provided a simple and easy\ experience when trying to book a hotel.
+                        I would recommend SuiteSpot to anyone going on vacation.
+                    </p>
+                </div>
+                <div class="client-card">
+                    <!-- <img src="./Pictures/client-2.jpg" alt="client"> -->
+                    <p>
+                        I found everything I needed on this website. It gave me an option to look for a gym,
+                        pool, and even free parking.
+                    </p>
+                </div>
+                <div class="client-card">
+                    <!-- <img src="./Pictures/client-3.jpg" alt="client"> -->
+                    <p>
+                        This was the most reliable and clean looking hotel booking website I have used.
+                        I would recommend it to anyone.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us-section">
+        <h1 class="about-us-section-header">About Us</h1>
+        <p class="about-us-section-text">
+            Suitespot is a student made project. It was created for ISTA 329's final
+            project. Many different students collaborated to be able to make this
+            website possible.
+        </p>
+        <p class="about-us-section-text">
+            Find more about this website and its development
+            <a href="/src/About-Us/about_us.html" class="about-us-section-link">Here</a>
+            <!--put link to about us-->
+        </p>
+    </section>
+    <footer class="footer">
+    <div class="section-container footer-container">
+        <div class="footer-col">
+            <h3>SuiteSpot</h3>
+            <p>
+                SuiteSpot is a hotel booking website that makes it easier for anyone
+                to find and book a hotel
+            </p>
+            <p>
+                SuiteSpot aims to have a user-friendly interface that makes it
+                easier and less stressful for the user.
+            </p>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+            <a href="/src/About-Us/about_us.html" class="footer-link">About Us</a>
+            <a href="/src/Contact-Page/contact.html" class="footer-link">Contact Us</a>
+            <a href="/src/Booking-Form/Booking_Form.html" class="footer-link">Book</a>
+        </div>
+        <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="/src/FAQ-Page/FAQ.html" class="footer-link">FAQs</a>
+            <a href="/src/Terms-of-Service-Page/Terms.html" class="footer-link">Terms & Conditions</a>
+            <a href="/src/Privacy-Policy/privacy.html" class="footer-link">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+            <h4>Resources</h4>
+            <a href="https://www.twitter.com" class="footer-link">Social Media</a>
+            <a href="" class="footer-link">Help Center</a>
+            <a href="" class="footer-link">Partnerships</a>
+        </div>
+    </div>
+    <div class="footer-bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+    </div>
+</footer>
+<script src="searchBarApp.js"></script>
+</body>
+
+</html>
